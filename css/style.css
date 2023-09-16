@@ -1,0 +1,210 @@
+/* 
+    1-General style
+    2-Sections
+        2.0- navbar Section 
+        2.1- Home Section  
+        2.2- Service Section 
+        2.3- effect Section  
+        2.4- Contact Section  
+*/
+
+
+/* 1- general css style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    background: #e9e9e9;
+    height: 1000px;
+}
+.section-padding{
+    padding: 40px 0;
+}
+.section-header{
+    text-align: center;
+    margin: 25px 0;
+}
+.section-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.section-header .line{
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background: #6195ff;
+    transition: width .5s;
+}
+.section-header:hover .line{
+    width: 200px;
+}
+/* 2.0- navbar */
+.navbar-brand{
+    text-shadow: -10px 5px 3px #0ff;
+}
+
+.navbar-collapse ul> li{
+    display: inline-block;
+    width: 75px;
+    text-align: center;
+    margin: 0 20px;
+}
+.navbar-collapse ul> li > a{
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    
+}
+.navbar-collapse ul> li > a::after,
+.navbar-collapse ul> li > a.active::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    margin-top: 5px;
+    display: block;
+    background-color: #6195ff;
+    transition: width .5s;
+}
+.navbar-collapse ul> li > a.active::after{
+    width: 100%;
+}
+.navbar-collapse ul> li > a:hover:after{
+    width: 100%;
+}
+
+/* 2.1- Home Section  */
+.carousel-item{
+    height: 650px;
+}
+.carousel-desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.carousel-desc .carousel-title{
+    color: #6195ff;
+    font-size: 45px;
+    font-weight: bold;
+}
+.carousel-desc .carousel-text{
+    line-height: 1.8;
+    color: #008;
+    word-spacing: 3px;
+
+}
+.carousel-desc .btn-group{
+    position: absolute;
+    left: 15%;
+}
+.carousel-desc .btn-group .btn{
+    padding: 20px 30px;
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 20px;
+}
+
+
+
+
+ 
+/* 2.2- Service Section  */
+
+.discount-desc{
+    position: relative;
+    background: #f7f3ef;
+    padding: 20px;
+}
+.discount-desc .top{
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.discount-desc .top .icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 50px;
+    color: var(--mainColor);
+}
+.discount-desc .top + p{
+    line-height: 1.7;
+}
+.discount-item{
+    position: relative;
+    transition: transform 0.5s;
+}
+.discount-item-info{
+    width: 100%;
+    position: absolute;
+    left: 15px;
+}
+.discount-item-info img{
+    height: 450px;
+    width: 100%;
+}
+
+.discount-item:hover{
+    transform: scale(1.2);
+}
+
+/* 2.3- effect Section  */
+
+.effect-img{
+    position: relative;
+}
+.effect-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+.effect-overlay .btn-group{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.effect-item:hover .effect-overlay{
+    transform: scaleX(1);
+}
+
+.effect-info i.active{
+    color: yellow;
+}
+.effect-info i{
+    margin-top: 10px;
+}
+.effect-info span{
+    display: block;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+/* 2.4- Contact Section */
+.contact{
+    background: orangered;
+    position: relative;
+    height: 600px;
+}
+.contact .input-group{
+    width: 60vw;
+    height: 70px;
+    margin: auto;
+}
+.contact .input-group input,span{
+    height: 60px;
+}
+.contact .btn{
+    position: absolute;
+    left: 170px;
+    top: 450px;
+    height: 60px;
+}

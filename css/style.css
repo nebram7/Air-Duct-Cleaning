@@ -95,8 +95,9 @@ body{
 .carousel-desc .carousel-text{
     line-height: 1.8;
     color: #000;
-    word-spacing: 3px;
     font-size: 20px;
+    word-spacing: 3px;
+
 }
 .carousel-desc .btn-group{
     text-align: center;

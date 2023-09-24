@@ -80,6 +80,7 @@ body{
 /* 2.1- Home Section  */
 .carousel-item{
     height: 650px;
+    position: relative;
 }
 .carousel-desc{
     position: absolute;
@@ -99,12 +100,10 @@ body{
 
 }
 .carousel-desc .btn-group{
-    position: absolute;
-    left: 15%;
+    text-align: center;
 }
 .carousel-desc .btn-group .btn{
     padding: 20px 30px;
-    text-align: center;
     margin: 20px 10px;
     font-size: 20px;
 }
@@ -119,7 +118,9 @@ body{
     position: relative;
     background: #f7f3ef;
     padding: 20px;
-    height: 450px;
+    height: 600px;
+    overflow: scroll;
+    
 }
 .discount-desc .top{
     position: relative;
@@ -147,8 +148,8 @@ body{
     left: 15px;
 }
 .discount-item-info img{
-    height: 450px;
     width: 100%;
+    height: 600px;
 }
 
 .discount-item:hover{
@@ -164,6 +165,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     transform: scaleX(0);
     transition: transform 0.3s;
 }

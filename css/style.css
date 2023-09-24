@@ -119,6 +119,7 @@ body{
     position: relative;
     background: #f7f3ef;
     padding: 20px;
+    height: 450px;
 }
 .discount-desc .top{
     position: relative;
@@ -190,7 +191,7 @@ body{
 
 /* 2.4- Contact Section */
 .contact{
-    background: orangered;
+    background: gray;
     position: relative;
     height: 600px;
 }

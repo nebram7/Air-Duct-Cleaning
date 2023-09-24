@@ -45,7 +45,7 @@ body{
 }
 /* 2.0- navbar */
 .navbar-brand{
-    text-shadow: -10px 5px 3px #0ff;
+    text-shadow: -10px 5px 6px #0ff;
 }
 
 .navbar-collapse ul> li{
@@ -80,7 +80,6 @@ body{
 /* 2.1- Home Section  */
 .carousel-item{
     height: 650px;
-    position: relative;
 }
 .carousel-desc{
     position: absolute;
@@ -95,9 +94,10 @@ body{
 }
 .carousel-desc .carousel-text{
     line-height: 1.8;
-    color: #008;
+    color: #000;
     word-spacing: 3px;
-
+    font-size: 20px;
+    font-weight: bold;
 }
 .carousel-desc .btn-group{
     text-align: center;
@@ -109,10 +109,7 @@ body{
 }
 
 
-
-
- 
-/* 2.2- Service Section  */
+/* 2.2- discount Section  */
 
 .discount-desc{
     position: relative;

@@ -45,7 +45,7 @@ body{
 }
 /* 2.0- navbar */
 .navbar-brand{
-    text-shadow: -10px 5px 6px #0ff;
+    text-shadow: -10px 1px 10px #0ff;
 }
 
 .navbar-collapse ul> li{
@@ -97,7 +97,6 @@ body{
     color: #000;
     word-spacing: 3px;
     font-size: 20px;
-    font-weight: bold;
 }
 .carousel-desc .btn-group{
     text-align: center;
